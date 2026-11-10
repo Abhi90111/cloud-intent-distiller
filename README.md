@@ -7,7 +7,7 @@
 
 End-to-end knowledge distillation and deployment of an intelligent command parser: an open-weights Phi-3.5 teacher (interfaced via Ollama) provides structured semantic JSON ground truth for complex conversational queries, which is then distilled into a high-efficiency Pythia-70M student model. The resulting lightweight inference engine is packaged into an asynchronous FastAPI container service and deployed within a local k3d Kubernetes cluster, utilizing SeaweedFS S3-compatible object store for decoupled artifact retrieval.
 
-* **GitHub Repository:** https://github.com/vabhiram/neural-command-distiller-k8s  
+* **GitHub Repository:** https://github.com/Abhi90111/cloud-intent-distiller  
 * **Release Artifacts:** Tag `v1.0`  
 
 ---
@@ -25,8 +25,8 @@ Ensure the host environment is equipped with:
 ## 2. Cluster Deployment & Bootstrapping
 Clone and launch the end-to-end environment:
 ```bash
-git clone https://github.com/vabhiram/neural-command-distiller-k8s
-cd neural-command-distiller-k8s
+git clone https://github.com/Abhi90111/cloud-intent-distiller
+cd cloud-intent-distiller
 make up
 ```
 

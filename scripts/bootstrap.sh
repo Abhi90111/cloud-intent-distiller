@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-PRIMARY_REL="${MODEL_RELEASE_URL:-https://github.com/vabhiram/neural-command-distiller-k8s/releases/download/v1.0}"
+PRIMARY_REL="${MODEL_RELEASE_URL:-https://github.com/Abhi90111/cloud-intent-distiller/releases/download/v1.0}"
 
 AK=$(openssl rand -hex 8)
 SK=$(openssl rand -hex 16)

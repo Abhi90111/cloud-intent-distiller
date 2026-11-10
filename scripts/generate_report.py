@@ -13,7 +13,7 @@ from reportlab.platypus import (
     SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle, HRFlowable
 )
 
-def build_pdf(filename="report/report.pdf", repo_url="https://github.com/vabhiram/neural-command-distiller-k8s"):
+def build_pdf(filename="report/report.pdf", repo_url="https://github.com/Abhi90111/cloud-intent-distiller"):
     os.makedirs(os.path.dirname(filename) or ".", exist_ok=True)
     doc = SimpleDocTemplate(
         filename,
@@ -336,5 +336,5 @@ def build_pdf(filename="report/report.pdf", repo_url="https://github.com/vabhira
 
 if __name__ == "__main__":
     import sys
-    url = sys.argv[1] if len(sys.argv) > 1 else "https://github.com/vabhiram/neural-command-distiller-k8s"
+    url = sys.argv[1] if len(sys.argv) > 1 else "https://github.com/Abhi90111/cloud-intent-distiller"
     build_pdf(repo_url=url)
